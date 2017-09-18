@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:orientation="vertical">
+
+    <!--espacio para poner el titulo del libro que quermos comprar en el detalle-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textIsSelectable="true"
+    tools:context="com.example.miguel.books.ItemDetailFragment" />
+
+    <!-- aqui es donde se insertara la imagen con ayuda de fresco-->
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/my_image_view"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    />
+
+</LinearLayout>
